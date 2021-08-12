@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.6.0/handlebars.min.js"></script>
+  <script src="carfiltering.js"></script>
+  <link rel="stylesheet" href="carshopfiltering.css">
+  <title>Pre-Owned Cars</title>
+</head>
+<body>
+  <header>
+    <h1>Pre-Owned Car Selection</h1>
+    <div id="filters">
+      <button type="submit" class="filter_btn">Filter</button>
+    </div>
+  </header>
+  <main>
+    <div id="cars"></div>
+  </main>
+
+    </script>
+    <script id="cars_template" type="text/x-handlebars">\
+      {{#each cars}}
+        {{> car_partial}}
+      {{/each}}
+    </script>
+    <script id="car_partial" type="text/x-handlebars">
+      <div class="car">
+        <div class="img">
+          <figure class="image">
+            <img src="{{image}}">
+          </figure>
+        </div>
+        <h2>{{make}} {{model}}</h2>
+        <p class="year">Year: {{year}}</p>
+        <p class="price">Price: ${{price}}</p>
+        <a href="#">Buy</a>
+      </div>
+    </script>
+</body>
+</html>

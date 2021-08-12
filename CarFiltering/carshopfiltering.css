@@ -1,0 +1,70 @@
+@import url("whitespace-reset.css");
+
+header {
+  height: 100px;
+  color: #fff;
+  background: linear-gradient(#710, #910);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+label {
+  margin: 0 0 0 10px;
+}
+
+select {
+  width: 80px;
+  height: 25px;
+  background: transparent;
+
+  color: #fff;
+  border: solid #fff 1px;
+  border-radius: 4px;
+  margin: 0 20px 0 5px;
+}
+
+
+option {
+  background: #710;
+}
+
+button.filter {
+  color: #fff;
+  margin: 0 0 0 20px;
+  background: transparent;
+  border: solid #fff 1px;
+  border-radius: 4px;
+  padding: 5px 10px;
+}
+
+#cars {
+  margin-top: 30px;
+}
+
+.car {
+  display: inline-block;
+  width: 200px;
+  margin: 0 0 20px 20px;
+}
+
+.car img {
+  width: 100%;
+}
+
+.car a {
+  background: linear-gradient(#710, #910);
+  display: inline-block;
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+.hide {
+  display: none;
+}
